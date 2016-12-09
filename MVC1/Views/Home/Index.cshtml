@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Employee List";
+}
+
+<h2>Employee List</h2>
+<ul>
+   @foreach(var employee in ViewBag.List)
+   {
+       <li>@employee.Name , @employee.Id , @employee.Salary</li>
+   }
+</ul>
+
